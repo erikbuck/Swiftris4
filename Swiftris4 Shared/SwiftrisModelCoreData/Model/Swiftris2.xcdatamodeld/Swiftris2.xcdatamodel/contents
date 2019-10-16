@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Block" representedClassName="Block" syncable="YES">
+        <attribute name="gridPositionX" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gridPositionY" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="info" optional="YES" transient="YES" attributeType="String"/>
+        <relationship name="grid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlockGrid" inverseName="blocks" inverseEntity="BlockGrid"/>
+    </entity>
+    <entity name="BlockGrid" representedClassName="BlockGrid" syncable="YES">
+        <relationship name="blocks" toMany="YES" deletionRule="Cascade" destinationEntity="Block" inverseName="grid" inverseEntity="Block"/>
+    </entity>
+    <entity name="BoardBlockGrid" representedClassName="BoardBlockGrid" parentEntity="BlockGrid" syncable="YES">
+        <relationship name="game" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="board" inverseEntity="Game"/>
+    </entity>
+    <entity name="FallingBlockGrid" representedClassName="FallingBlockGrid" parentEntity="BlockGrid" syncable="YES">
+        <attribute name="gridPositionX" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gridPositionY" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="info" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="rotations" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="fallingBlock" inverseEntity="Game"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="fallRate" optional="YES" attributeType="Float" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="highScore" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFallingFast" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isOver" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="isPaused" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="board" maxCount="1" deletionRule="Cascade" destinationEntity="BoardBlockGrid" inverseName="game" inverseEntity="BoardBlockGrid"/>
+        <relationship name="fallingBlock" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FallingBlockGrid" inverseName="game" inverseEntity="FallingBlockGrid"/>
+    </entity>
+    <elements>
+        <element name="Block" positionX="136.13671875" positionY="-245.2265625" width="128" height="105"/>
+        <element name="BlockGrid" positionX="131.4765625" positionY="-332.60546875" width="128" height="58"/>
+        <element name="BoardBlockGrid" positionX="-39.09765625" positionY="-330.19140625" width="128" height="58"/>
+        <element name="FallingBlockGrid" positionX="-35.28515625" positionY="-254.09765625" width="128" height="118"/>
+        <element name="Game" positionX="-270.26171875" positionY="-314.17578125" width="128" height="165"/>
+    </elements>
+</model>
