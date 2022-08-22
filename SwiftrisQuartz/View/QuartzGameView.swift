@@ -16,12 +16,11 @@ class QuartzGameView : UIView {
    
    public override func draw(_ rect: CGRect) {
       self.layer.transform = CATransform3DMakeScale(1, -1, 1)
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
       let blockWidth = bounds.size.width / CGFloat(BoardBlockGrid.width)
       let blockHeight = bounds.size.height / CGFloat(BoardBlockGrid.height)
       QuartzGameView.defaultStrokeColor.setStroke()
       QuartzGameView.defaultFillColor.setFill()
-      for candidateBlock in appDelegate.game.board!.blocks! {
+       for candidateBlock in Model.shared.game.board!.blocks! {
          let block = candidateBlock as! Block
          let blockRect = CGRect(x: CGFloat(block.gridPositionX) * blockWidth, 
                                 y: CGFloat(block.gridPositionY) * blockHeight, 
@@ -33,7 +32,7 @@ class QuartzGameView : UIView {
       }
       
       QuartzGameView.defaultFillColor.setStroke()
-      if let fallingBlock = appDelegate.game.fallingBlock { 
+       if let fallingBlock = Model.shared.game.fallingBlock {
          for candidateBlock in fallingBlock.blocks! {
             let block = candidateBlock as! Block
             let (x, y) = fallingBlock.transformedGridPosition(

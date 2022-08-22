@@ -124,16 +124,14 @@ class GameScene: SKScene {
    }
    
    func updateFallingBlock() {
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
-      
-      if let fallingBlock = appDelegate.game.fallingBlock { 
+       if let fallingBlock = Model.shared.game.fallingBlock {
          if nil == fallingBlock.info { // This must be a new falling block
             replaceFallingBlock(fallingBlock)
          }
          
          animateRotation(fallingBlock : fallingBlock)
          animateHorizontal(fallingBlock : fallingBlock)
-         animateFall(fallingBlock : fallingBlock, fallRate: appDelegate.game.fallRate, isFallingFast : appDelegate.game.isFallingFast)            
+           animateFall(fallingBlock : fallingBlock, fallRate: Model.shared.game.fallRate, isFallingFast : Model.shared.game.isFallingFast)
       }
    }
    
@@ -152,13 +150,12 @@ class GameScene: SKScene {
       let boardWidth = boardSize.width
       let blockWidth = boardWidth / CGFloat(BoardBlockGrid.width)
       let blockHeight = boardHeight / CGFloat(BoardBlockGrid.height)
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
       
       // Update all of the nodes that correspond to blocks in the game board
       // If a node exists for a block that is no longer in the game board, remove
       // the node by not including it in setOfBlockNodesToKeep
       var setOfBlockNodesToKeep = Set<String>()
-      for candidateBlock in appDelegate.game.board!.blocks! {
+       for candidateBlock in Model.shared.game.board!.blocks! {
          let block = candidateBlock as! Block
          if nil == block.info || nil == GameScene.blockInfoToNodeDictionary[block.info!] {
             let newNode = SKSpriteNode(imageNamed: "block")

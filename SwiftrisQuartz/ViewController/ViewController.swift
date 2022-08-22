@@ -9,24 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
-   @IBOutlet var gameOverView : UIView?
-   @IBOutlet var gameView : QuartzGameView?
-   @IBOutlet var scoreLabel : UILabel?
-   @IBOutlet var highScoreLabel : UILabel?
-   
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
-      appDelegate.update()
-   }
-   
-   public func update() {
-      self.gameView!.setNeedsDisplay()
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
-      self.gameOverView?.isHidden = !appDelegate.game.isOver
-      scoreLabel?.text = String(appDelegate.game.score)
-      highScoreLabel?.text = String(appDelegate.game.highScore)
-   }
+    
+    @IBOutlet var gameOverView : UIView?
+    @IBOutlet var gameView : QuartzGameView?
+    @IBOutlet var scoreLabel : UILabel?
+    @IBOutlet var highScoreLabel : UILabel?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Model.shared.updateHandler = {
+            self.update()
+        }
+        Model.shared.update()
+    }
+    
+    public func update() {
+        self.gameView!.setNeedsDisplay()
+        self.gameOverView?.isHidden = !Model.shared.game.isOver
+        scoreLabel?.text = String(Model.shared.game.score)
+        highScoreLabel?.text = String(Model.shared.game.highScore)
+    }
 }
 

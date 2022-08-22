@@ -71,6 +71,37 @@
 		03C4AF532351550F00A60495 /* Magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF522351550F00A60495 /* Magic.mp3 */; };
 		03C4AF592351596C00A60495 /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF582351596C00A60495 /* Woosh.mp3 */; };
 		03C4AF5B23515C8800A60495 /* green-background-images-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF5A23515C8800A60495 /* green-background-images-23.jpg */; };
+		970F55BC28B407EE001B5235 /* Swiftris2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA22A2347DF44009C48D5 /* Swiftris2.xcdatamodeld */; };
+		970F55BD28B407EE001B5235 /* Block+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1B62347DA9B009C48D5 /* Block+CoreDataClass.swift */; };
+		970F55BE28B407EE001B5235 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1B72347DA9B009C48D5 /* Game+CoreDataClass.swift */; };
+		970F55BF28B407EE001B5235 /* FallingBlockGrid+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1B82347DA9B009C48D5 /* FallingBlockGrid+CoreDataProperties.swift */; };
+		970F55C028B407EE001B5235 /* BoardBlockGrid+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1B92347DA9B009C48D5 /* BoardBlockGrid+CoreDataProperties.swift */; };
+		970F55C128B407EE001B5235 /* BoardBlockGrid+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1BA2347DA9B009C48D5 /* BoardBlockGrid+CoreDataClass.swift */; };
+		970F55C228B407EE001B5235 /* BlockGrid+logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1BD2347DA9B009C48D5 /* BlockGrid+logic.swift */; };
+		970F55C328B407EE001B5235 /* Block+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1BE2347DA9B009C48D5 /* Block+CoreDataProperties.swift */; };
+		970F55C428B407EE001B5235 /* BlockGrid+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1BF2347DA9B009C48D5 /* BlockGrid+CoreDataProperties.swift */; };
+		970F55C528B407EE001B5235 /* BoardBlockGrid+logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C02347DA9B009C48D5 /* BoardBlockGrid+logic.swift */; };
+		970F55C628B407EE001B5235 /* Game+logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C12347DA9B009C48D5 /* Game+logic.swift */; };
+		970F55C728B407EE001B5235 /* FallingBlockGrid+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C22347DA9B009C48D5 /* FallingBlockGrid+CoreDataClass.swift */; };
+		970F55C828B407EE001B5235 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C32347DA9B009C48D5 /* Game+CoreDataProperties.swift */; };
+		970F55C928B407EE001B5235 /* FallingBlockGrid+logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C42347DA9B009C48D5 /* FallingBlockGrid+logic.swift */; };
+		970F55CA28B407EE001B5235 /* BlockGrid+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA1C52347DA9B009C48D5 /* BlockGrid+CoreDataClass.swift */; };
+		970F55CC28B40C1A001B5235 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F55CB28B40C1A001B5235 /* Model.swift */; };
+		970F55CD28B40C1A001B5235 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F55CB28B40C1A001B5235 /* Model.swift */; };
+		970F55CE28B40C1A001B5235 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F55CB28B40C1A001B5235 /* Model.swift */; };
+		970F55CF28B40C1A001B5235 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F55CB28B40C1A001B5235 /* Model.swift */; };
+		970F55D028B4148F001B5235 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA1AE2347DA86009C48D5 /* block.png */; };
+		970F55D128B4148F001B5235 /* green-background-images-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF5A23515C8800A60495 /* green-background-images-23.jpg */; };
+		970F55D228B4148F001B5235 /* Magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF522351550F00A60495 /* Magic.mp3 */; };
+		970F55D328B4148F001B5235 /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF582351596C00A60495 /* Woosh.mp3 */; };
+		970F55D428B41501001B5235 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA1AE2347DA86009C48D5 /* block.png */; };
+		970F55D528B41501001B5235 /* Clockwise.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA1B02347DA86009C48D5 /* Clockwise.png */; };
+		970F55D628B41501001B5235 /* Counterclockwise.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA1AF2347DA86009C48D5 /* Counterclockwise.png */; };
+		970F55D728B41501001B5235 /* green-background-images-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF5A23515C8800A60495 /* green-background-images-23.jpg */; };
+		970F55D828B41501001B5235 /* RemoveParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF4E235144DF00A60495 /* RemoveParticle.sks */; };
+		970F55D928B41501001B5235 /* Magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF522351550F00A60495 /* Magic.mp3 */; };
+		970F55DA28B41501001B5235 /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF582351596C00A60495 /* Woosh.mp3 */; };
+		970F55DB28B41501001B5235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C4AF4F235144DF00A60495 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +166,7 @@
 		03C4AF522351550F00A60495 /* Magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Magic.mp3; sourceTree = "<group>"; };
 		03C4AF582351596C00A60495 /* Woosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Woosh.mp3; sourceTree = "<group>"; };
 		03C4AF5A23515C8800A60495 /* green-background-images-23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "green-background-images-23.jpg"; sourceTree = "<group>"; };
+		970F55CB28B40C1A001B5235 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				03AFA1B52347DA9B009C48D5 /* Model */,
+				970F55CB28B40C1A001B5235 /* Model.swift */,
 			);
 			path = SwiftrisModelCoreData;
 			sourceTree = "<group>";
@@ -416,7 +449,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = CosmicThump;
 				TargetAttributes = {
 					03AFA1692347DA50009C48D5 = {
@@ -504,6 +537,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970F55D428B41501001B5235 /* block.png in Resources */,
+				970F55D528B41501001B5235 /* Clockwise.png in Resources */,
+				970F55D628B41501001B5235 /* Counterclockwise.png in Resources */,
+				970F55D728B41501001B5235 /* green-background-images-23.jpg in Resources */,
+				970F55D828B41501001B5235 /* RemoveParticle.sks in Resources */,
+				970F55D928B41501001B5235 /* Magic.mp3 in Resources */,
+				970F55DA28B41501001B5235 /* Woosh.mp3 in Resources */,
+				970F55DB28B41501001B5235 /* Assets.xcassets in Resources */,
 				03AFA1952347DA50009C48D5 /* Main.storyboard in Resources */,
 				03AFA1A22347DA50009C48D5 /* Assets.xcassets in Resources */,
 			);
@@ -513,6 +554,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970F55D028B4148F001B5235 /* block.png in Resources */,
+				970F55D128B4148F001B5235 /* green-background-images-23.jpg in Resources */,
+				970F55D228B4148F001B5235 /* Magic.mp3 in Resources */,
+				970F55D328B4148F001B5235 /* Woosh.mp3 in Resources */,
 				03AFA2282347DDBB009C48D5 /* Clockwise.png in Resources */,
 				03AFA2292347DDBB009C48D5 /* Counterclockwise.png in Resources */,
 				03AFA2112347DC31009C48D5 /* LaunchScreen.storyboard in Resources */,
@@ -544,6 +589,7 @@
 				03AFA1D62347DA9B009C48D5 /* BlockGrid+CoreDataClass.swift in Sources */,
 				03AFA1CE2347DA9B009C48D5 /* BlockGrid+logic.swift in Sources */,
 				03AFA1D42347DA9B009C48D5 /* Game+CoreDataProperties.swift in Sources */,
+				970F55CC28B40C1A001B5235 /* Model.swift in Sources */,
 				03AFA1C82347DA9B009C48D5 /* Block+CoreDataClass.swift in Sources */,
 				03AFA1D12347DA9B009C48D5 /* BoardBlockGrid+logic.swift in Sources */,
 			);
@@ -556,6 +602,7 @@
 				03AFA19E2347DA50009C48D5 /* GameScene.swift in Sources */,
 				03AFA1812347DA50009C48D5 /* GameViewController.swift in Sources */,
 				03AFA17F2347DA50009C48D5 /* AppDelegate.swift in Sources */,
+				970F55CD28B40C1A001B5235 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +610,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970F55BC28B407EE001B5235 /* Swiftris2.xcdatamodeld in Sources */,
+				970F55BD28B407EE001B5235 /* Block+CoreDataClass.swift in Sources */,
+				970F55BE28B407EE001B5235 /* Game+CoreDataClass.swift in Sources */,
+				970F55BF28B407EE001B5235 /* FallingBlockGrid+CoreDataProperties.swift in Sources */,
+				970F55C028B407EE001B5235 /* BoardBlockGrid+CoreDataProperties.swift in Sources */,
+				970F55C128B407EE001B5235 /* BoardBlockGrid+CoreDataClass.swift in Sources */,
+				970F55C228B407EE001B5235 /* BlockGrid+logic.swift in Sources */,
+				970F55C328B407EE001B5235 /* Block+CoreDataProperties.swift in Sources */,
+				970F55C428B407EE001B5235 /* BlockGrid+CoreDataProperties.swift in Sources */,
+				970F55C528B407EE001B5235 /* BoardBlockGrid+logic.swift in Sources */,
+				970F55C628B407EE001B5235 /* Game+logic.swift in Sources */,
+				970F55C728B407EE001B5235 /* FallingBlockGrid+CoreDataClass.swift in Sources */,
+				970F55C828B407EE001B5235 /* Game+CoreDataProperties.swift in Sources */,
+				970F55C928B407EE001B5235 /* FallingBlockGrid+logic.swift in Sources */,
+				970F55CA28B407EE001B5235 /* BlockGrid+CoreDataClass.swift in Sources */,
 				03AFA19F2347DA50009C48D5 /* GameScene.swift in Sources */,
+				970F55CE28B40C1A001B5235 /* Model.swift in Sources */,
 				03AFA1922347DA50009C48D5 /* GameViewController.swift in Sources */,
 				03AFA1902347DA50009C48D5 /* AppDelegate.swift in Sources */,
 			);
@@ -589,6 +652,7 @@
 				03AFA2242347DC5A009C48D5 /* FallingBlockGrid+logic.swift in Sources */,
 				03AFA2252347DC5A009C48D5 /* BlockGrid+CoreDataClass.swift in Sources */,
 				03AFA2162347DC50009C48D5 /* AppDelegate.swift in Sources */,
+				970F55CF28B40C1A001B5235 /* Model.swift in Sources */,
 				03AFA2092347DC2F009C48D5 /* ViewController.swift in Sources */,
 				03AFA2272347DC71009C48D5 /* QuartzGameView.swift in Sources */,
 			);
@@ -682,6 +746,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -740,6 +805,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -851,6 +917,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8Z5LCWW649;
@@ -872,6 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8Z5LCWW649;
