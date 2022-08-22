@@ -10,21 +10,43 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
-   func applicationDidFinishLaunching(_ aNotification: Notification) {
-      // Insert code here to initialize your application
-   }
-
-   func applicationWillTerminate(_ aNotification: Notification) {
-      // Insert code here to tear down your application
-   }
-
-   func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-      return true
-   }
-
-
+    
+    @IBAction func start(_ : Any) {
+        Model.shared.game.start()
+        Model.shared.update()
+    }
+    
+    @IBAction func moveLeft(_ : Any) {
+        Model.shared.game.moveFallingBlockLeft()
+    }
+    
+    @IBAction func moveRight(_ : Any) {
+        Model.shared.game.moveFallingBlockRight()
+    }
+    
+    @IBAction func rotateClockwise(_ : Any) {
+        Model.shared.game.rotateFallingBlockClockwise()
+    }
+    
+    @IBAction func rotateCounterclockwise(_ : Any) {
+        Model.shared.game.rotateFallingBlockCounterclockwise()
+    }
+    
+    @IBAction func drop(_ : Any) {
+        Model.shared.game.fallFast()
+    }
+    
+    private func applicationWillResignActive(_ application: NSApplication) {
+        Model.shared.game.isPaused = true
+        Model.shared.saveContext()
+    }
+    
+    private func applicationDidBecomeActive(_ application: NSApplication) {
+        Model.shared.game.isPaused = false
+        Model.shared.update()
+    }
+    
+    private func applicationWillTerminate(_ application: NSApplication) {
+        Model.shared.saveContext()
+    }
 }
-
